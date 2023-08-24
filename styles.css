@@ -1,0 +1,113 @@
+:root {
+    /* Primary colors */
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --Dark_gray: hsl(0, 0%, 59%);
+
+    /* Fonts */
+    --font1: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font1);
+    color: var(--Very_dark_desaturated_blue);
+    font-size: 18px;
+    background: url('./images/bg-pattern-top.svg') no-repeat -350px -650px;
+    background-attachment: fixed;
+    background-color: var(--Dark_cyan);
+}
+
+.main {
+    background: url('./images/bg-pattern-bottom.svg') no-repeat 600px 250px;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.top-container {
+    height: 150px;
+    width: 350px;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-size: cover;
+}
+
+.img-section {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+    border: 5px solid white;
+}
+
+.img-section img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.user h4 {
+    margin-top: 50px;
+}
+
+.user h4 span {
+    color: var(--Dark_grayish_blue);
+    margin-left: 5px;
+}
+
+.user p {
+    color: var(--Dark_grayish_blue);
+    margin: 10px 0 20px;
+
+}
+
+.hr-line {
+    opacity: 0.2;
+    width: 100%;
+    border: 1px solid var(--Dark_gray);
+    margin-bottom: 30px;
+}
+
+.social-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin: 10px 5px 20px;
+}
+
+.social-info span {
+    font-size: 12px;
+    color: var(--Dark_grayish_blue);
+}
+
+
+@media (min-width:360px) {
+    body {
+        background: url("./images/bg-pattern-top.svg") var(--Dark_cyan) no-repeat -600px -700px;
+        background-attachment: fixed;
+    }
+
+    .main {
+        background: url('./images/bg-pattern-bottom.svg') no-repeat 0px 250px;
+        background-attachment: fixed;
+    }
+}
