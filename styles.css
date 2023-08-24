@@ -18,15 +18,16 @@
 
 body {
     font-family: var(--font1);
+    height: 100vh;
     color: var(--Very_dark_desaturated_blue);
     font-size: 18px;
-    background: url('./images/bg-pattern-top.svg') no-repeat -350px -650px;
     background-attachment: fixed;
-    background-color: var(--Dark_cyan);
+    background: url('./images/bg-pattern-top.svg') var(--Dark_cyan) no-repeat -100px -650px;
+
 }
 
 .main {
-    background: url('./images/bg-pattern-bottom.svg') no-repeat 600px 250px;
+    background: url('./images/bg-pattern-bottom.svg') no-repeat 750px 250px;
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;
@@ -100,7 +101,7 @@ body {
 }
 
 
-@media (min-width:360px) {
+@media (max-width:360px) {
     body {
         background: url("./images/bg-pattern-top.svg") var(--Dark_cyan) no-repeat -600px -700px;
         background-attachment: fixed;
@@ -108,6 +109,18 @@ body {
 
     .main {
         background: url('./images/bg-pattern-bottom.svg') no-repeat 0px 250px;
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width:400px) and (max-width:1028px) {
+    body {
+        background: url("./images/bg-pattern-top.svg") var(--Dark_cyan) no-repeat -450px -700px;
+        background-attachment: fixed;
+    }
+
+    .main {
+        background: url('./images/bg-pattern-bottom.svg') no-repeat 200px 250px;
         background-attachment: fixed;
     }
 }
